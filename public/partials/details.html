@@ -1,6 +1,11 @@
 <div>
+  <a href = "#/details/{{movie.rank - 1}}"><h2>Prev</h2></a>
+  <a href = "#/details/{{movie.rank + 1}}"><h2>Next</h2></a>
   <h1>Details {{movie.title}}</h1>
   <p>Rank {{movie.rank}}</p>
   <p>Director {{movie.director}}</p>
   <img ng-src="data/images/{{movie.imdbID}}.jpg"/>
+  <p>Rating {{movie.rated}}</p>
+  <p>Runtime {{movie.runtime}}</p>
+  <p>Plot: {{movie.plot}}</p>
 </div>
