@@ -1,0 +1,29 @@
+<div>
+  <h1>Gallery</h1>
+    <button ng-click = "filters.genre = "Action"">Action</button>
+    <button ng-click = "filters.genre = Adventure">Adventure</button>
+    <button ng-click = "filters.genre = Animation">Animation</button>
+    <button ng-click = "filters.genre = Biography">Biography</button>
+    <button ng-click = "filters.genre = Comedy">Comedy</button>
+    <button>Crime</button>
+    <button>Drama</button>
+    <button>Family</button>
+    <button>Fantasy</button>
+    <button>Film-Noir</button>
+    <button>History</button>
+    <button>Horror</button>
+    <button>Music</button>
+    <button>Musical</button>
+    <button>Mystery</button>
+    <button>Romance</button>
+    <button>Sci-Fi</button>
+    <button>Sport</button>
+    <button>Thriller</button>
+    <button>War</button>
+    <button>Western</button>
+    
+    <div ng-repeat="m in movies">
+      <a href = "#/details/{{m.rank}}"><img ng-src="data/images/{{m.imdbID}}.jpg"/></a>
+    </div>
+
+</div>
